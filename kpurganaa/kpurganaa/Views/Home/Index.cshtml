@@ -1,0 +1,99 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div style="background-color:lightsteelblue">
+    <div style="background-color:lightblue">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="~/img/f33575d66100db4c3830ca1f53b1efa5.jpeg.jpeg" class="d-block" width=100% height="550" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>"Más que un alojamiento, una experiencia inolvidable"</h5>
+                        <p>"Donde tu descanso se convierte en experiencia"</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="~/img/001b704a-city-15939-163e0a462f2.jpg.jpeg" class="d-block" width=100% height="550" alt="...">
+                    <div class="carousel-caption d-none d-md-block"> 
+                        <h5>"Encuentra tu hogar lejos de casa"</h5>
+                        <p>"Descanso y confort en un solo lugar"</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="~/img/6f38d4573ea286a2.png.jpeg" class="d-block" width=100% height="550" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>"La escapada perfecta, en el corazón de la ciudad"</h5>
+                        <p>"Donde el mar y el descanso se encuentran"</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="text-center mx-auto" style="width: 50%; margin-top: 4cm; margin-bottom:4cm;">
+            <h2>Naturalmente Confortable</h2>
+            <p>
+                Habitaciones funcionales y modernos. Amplios espacios verdes. Piscina climatizada
+                (de septiembre a abril) con energia solar, con yacuzzi, Gimnasio al aire libre.¡Abierto todo el año!</p>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 5cm;">
+        <div class="card text-center col shadow-sm transition" style="padding:1rem; margin:1rem;">
+            <img src="~/img/habitaciones.png.jpeg" class="card-img" style="margin-left:0;" height="300" alt="...">
+            <div class="card-img-overlay" style="margin-top: 3cm;color:white">
+                <a href="@Url.Action("create", "reservas")" style="font-size: 50px;color:white;text-shadow: 5px 3px 5px rgba(0, 0, 0, 0.7);" class="card-title">Reservas</a>
+            </div>
+        </div>
+    </div>
+
+    <div style="background-color:lightgray">
+        <div class="text-center mx-auto" style="width: 50%; margin-top: 8cm;">
+            <h2>Nuestras Unidades</h2>
+            <p>
+                El sistema de construccion permite que las unidades sean independientes de las areas comunes del hotel
+            </p>
+        </div>
+        <div class="row" style="margin-top: 4cm;">
+           
+            <div class="card text-center col offset-1 shadow-sm transition" style="padding:1rem; margin:1rem;">
+                <img src="~/img/beautiful-luxury-umbrella-and-chair-around-outdoor-swimming-pool-in-hotel-and-resort-with-coconut-palm-tree-on-blue-sky-free-photo.jpg.jpeg" class="card-img" height="300" alt="...">
+                <div class="card-img-overlay" style="margin-top: 3cm; color:white">
+                    <a href="@Url.Action("create", "reservas")" style="font-size: 50px;color:white;text-shadow: 5px 3px 5px rgba(0, 0, 0, 0.7);" class="card-title">Habitaciones</a>
+                </div>
+            </div>
+            <div class="card text-center col offset-1 shadow-sm transition" style="padding:1rem; margin:1rem;">
+                <img src="~/img/hacienda-na-xamena-1502992747.jpg.jpeg" class="card-img" height="300" alt="...">
+                <div class="card-img-overlay" style="margin-top: 3cm;color:white">
+                    <a href="@Url.Action("index", "habitaciones")" style="font-size: 50px;color:white;text-shadow: 5px 3px 5px rgba(0, 0, 0, 0.7);" class="card-title">Servicios</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="text-center mx-auto" style="width: 50%; margin-top: 5cm;">
+            <h2>Nuestros Paquetes</h2>
+            <p>
+              Ya sea que busques una escapada romántica, unas vacaciones familiares llenas de diversión, o un retiro de bienestar, contamos con opciones especiales que combinan alojamiento, actividades exclusivas y servicios adicionales. 
+        </div>
+        <div class="row" style="margin-top: 5cm;">
+            <div class="card text-center col shadow-sm transition" style="padding:1rem; margin:1rem;">
+                <img src="~/img/Turismo-y-hoteles-scaled.jpg.jpeg" class="card-img" style="margin-left:0;" height="300" alt="...">
+                <div class="card-img-overlay" style="margin-top: 3cm;color:white">
+                    <a href="@Url.Action("index", "habitaciones")" style="font-size: 50px;color:white;text-shadow: 5px 3px 5px rgba(0, 0, 0, 0.7);" class="card-title">Paquetes </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
